@@ -1,13 +1,18 @@
 # Jira Cloud Agile QA Portfolio Project
 
-## Project Overview
+##  Project Overview
 This repository documents a hands-on manual testing project executed within a sandbox Jira Software environment. The goal was to establish full requirement traceability, manage an active Scrum sprint lifecycle, and practice production-level defect reporting for an E-Commerce system.
 
+##  Core QA Testing Assets
+**Excel Test Case Suite:** [Download the E-Commerce Manual Test Cases Sheet](./Ecommerce_Login_Manual_Test_Cases.xlsx)
 
 ##  Agile Project Architecture
 - **Epic:** User Login, Registration, and Account Security Module (`SCRUM-5`)
 - **User Story:** As a registered user, I want to successfully log into my account using valid credentials (`SCRUM-6`)
 - **Sprint Management:** Enforced project timelines by mapping requirement backlogs into an active 2-week Scrum Sprint container (`SCRUM Sprint 2`).
+
+###  Active Scrum Board View
+![Jira Scrum Board](./board-view.jpg)
 
 ---
 
@@ -18,7 +23,10 @@ During functional testing of the login authentication criteria, a severe system 
 - **Summary:** `[Bug] [Login] - 500 Internal Server Error displayed when submitting valid credentials`
 - **Traceability Link:** Configured an explicit `is blocked by` relationship, mapping the defect ticket directly as a blocker to the parent User Story (`SCRUM-6`).
 
-###  Production Bug Report Layout
+###  Bug Traceability Link Evidence
+![Jira Linked Defect Panel](./linked-bug.jpg)
+
+### 📝 Production Bug Report Layout
 ```text
 [Environment]
 OS: Windows 11 / Browser: Chrome v131
@@ -36,7 +44,5 @@ User is successfully authenticated and redirected to the Account Dashboard.
 The application crashes with a blank white screen displaying: "500 Internal Server Error".
 ```
 
-##  QA Sign-off & Hygiene
-Demonstrated professional test communication by adding active status updates directly to core cards:
-* Documented precise environment parameters and execution block summaries in core task history notes.
-* Enforced strict testing hygiene by keeping core requirements blocked in the QA queue until formal verification sweeps passed.
+
+
